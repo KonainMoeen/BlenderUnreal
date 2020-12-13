@@ -55,10 +55,10 @@ class BTU_PT_MainPanel(bpy.types.Panel):
         gtools = context.scene.gtools
         row.prop(gtools, "project_path")
         row = layout.row()
-        row.prop(gtools, "content_location")
+        row.prop(gtools, "content_location",icon="TOPBAR")
         row = layout.row()
-        row.prop(gtools, "asset_prefix")
-        layout.operator("scene.button_operator")
+        row.prop(gtools, "asset_prefix", icon="TEXT")
+        layout.operator("scene.button_operator", icon="EXPORT")
 
 
 class ButtonOperator(bpy.types.Operator):
