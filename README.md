@@ -1,2 +1,4 @@
-# BlenderUnreal
- Blender To Unreal Plugin
+# Blender Unreal
+ Blender to Unreal Plugin
+
+This is under development and should not be redistributed.
