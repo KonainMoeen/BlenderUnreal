@@ -76,7 +76,7 @@ def ExportTempAssets():
         # some exporters only use the active object
         view_layer.objects.active = obj
         name = bpy.path.clean_name(obj.name)
-        bpy.ops.export_scene.fbx(filepath=backendpath + '/tempExports/' + name + ".fbx", use_selection=True)
+        bpy.ops.export_scene.fbx(filepath=backendpath + '/tempExports/' + getAssetPrefix() + name + ".fbx", use_selection=True)
 
         # Can be used for multiple formats
         # bpy.ops.export_scene.x3d(filepath=fn + ".x3d", use_selection=True)

@@ -96,7 +96,7 @@ def unregister():
 
 
 def getAssetPrefix():
-    return gtools.content_location
+    return gtools.asset_prefix
 
 
 if __name__ == "__main__":
